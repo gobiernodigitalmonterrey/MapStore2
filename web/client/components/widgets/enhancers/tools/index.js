@@ -11,6 +11,7 @@ import collapsibleWidgetEnhancer from './collapsibleWidget';
 import maximizableWidgetEnhancer from './maximizableWidget';
 import editableWidgetEnhancer from './editableWidget';
 import exportableWidgetEnhancer from './exportableWidget';
+import exportableTableWidgetEnhancer from './exportableTableWidget';
 import hidableWidgetEnhancer from './hidableWidget';
 import pinnableWidgetEnhancer from './pinnableWidget';
 import withIconsEnhancer from './withIcons';
@@ -26,6 +27,7 @@ export const withIcons = withIconsEnhancer;
 export const withInfo = withInfoEnhancer;
 export const editableWidget = editableWidgetEnhancer;
 export const exportableWidget = exportableWidgetEnhancer;
+export const exportableTableWidget = exportableTableWidgetEnhancer;
 export const collapsibleWidget = collapsibleWidgetEnhancer;
 export const maximizableWidget = maximizableWidgetEnhancer;
 /**
