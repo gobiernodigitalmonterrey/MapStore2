@@ -10,7 +10,7 @@ import { get } from 'lodash';
 import { compose, withPropsOnChange } from 'recompose';
 import debounce from 'lodash/debounce';
 import deleteWidget from './deleteWidget';
-import { defaultIcons, editableWidget, withHeaderTools } from './tools';
+import { defaultIcons, editableWidget, exportableTableWidget, withHeaderTools } from './tools';
 
 const withSorting = () => withPropsOnChange(["gridEvents"], ({ gridEvents = {}, updateProperty = () => { }, id } = {}) => ({
     gridEvents: {
@@ -37,6 +37,7 @@ export default compose(
     }),
     deleteWidget,
     editableWidget(),
+    exportableTableWidget(),
     defaultIcons(),
     withHeaderTools(),
     withSorting()
